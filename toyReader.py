@@ -147,12 +147,12 @@ def Main():
 					d = getAllColumnValues2(f,line_offset,i)
 					#s = collections.OrderedDict(sorted(d.items()))
 					#if fileName != 'review_1m.csv' and fileName != 'review_500k.csv':
-					#try:
-					#	createDiskTree(d,fileName,attributeName)
-					#except:
-					#	pass
+					try:
+						createDiskTree(d,fileName,attributeName)
+					except:
+						pass
 					#else:
-					btree.append(createMemoryTree(d,fileName,attributeName))
+					#btree.append(createMemoryTree(d,fileName,attributeName))
 					d.clear()
 					#s.clear()
 			#BTreeTest(d)	
